@@ -20,7 +20,7 @@ class HeartTacker {
     }
         
     // 심박수 측정하기
-    private func startHeartRateQuery(quantityTypeIdentifier: HKQuantityTypeIdentifier) {
+    func startHeartRateQuery(_ quantityTypeIdentifier: HKQuantityTypeIdentifier = .heartRate) {
         let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
         let updateHandler: (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObject]?, HKQueryAnchor?, Error?) -> Void = {
             query, samples, deletedObjects, queryAnchor, error in

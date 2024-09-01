@@ -7,24 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B2C861E2C84C733000A05D6 /* HeartRateTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C861D2C84C733000A05D6 /* HeartRateTrackerApp.swift */; };
-		2B2C86202C84C733000A05D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C861F2C84C733000A05D6 /* ContentView.swift */; };
-		2B2C86222C84C736000A05D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C86212C84C736000A05D6 /* Assets.xcassets */; };
-		2B2C86252C84C736000A05D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C86242C84C736000A05D6 /* Preview Assets.xcassets */; };
-		2B2DC1A52C84C921004B28DA /* HeartTacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1A42C84C921004B28DA /* HeartTacker.swift */; };
+		2B2DC1AD2C84D5B6004B28DA /* HeartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */; };
+		2B2DC1AF2C84D5B6004B28DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1AE2C84D5B6004B28DA /* ContentView.swift */; };
+		2B2DC1B12C84D5B7004B28DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1B02C84D5B7004B28DA /* Assets.xcassets */; };
+		2B2DC1B42C84D5B7004B28DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1B32C84D5B7004B28DA /* Preview Assets.xcassets */; };
+		2B2DC1BA2C84D5B7004B28DA /* HeartTracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2B2DC1B92C84D5B7004B28DA /* HeartTracker.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2B2DC1BF2C84D5B7004B28DA /* HeartTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1BE2C84D5B7004B28DA /* HeartTrackerApp.swift */; };
+		2B2DC1C12C84D5B7004B28DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C02C84D5B7004B28DA /* ContentView.swift */; };
+		2B2DC1C32C84D5B8004B28DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C22C84D5B8004B28DA /* Assets.xcassets */; };
+		2B2DC1C62C84D5B8004B28DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C52C84D5B8004B28DA /* Preview Assets.xcassets */; };
+		2B2DC1CE2C84D629004B28DA /* HeartTacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1A42C84C921004B28DA /* HeartTacker.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2B2DC1BB2C84D5B7004B28DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B2C86122C84C733000A05D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B2DC1B82C84D5B7004B28DA;
+			remoteInfo = "HeartTracker Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B2DC1CA2C84D5B8004B28DA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2B2DC1BA2C84D5B7004B28DA /* HeartTracker.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2B2C861A2C84C733000A05D6 /* HeartRateTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartRateTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2C861D2C84C733000A05D6 /* HeartRateTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTrackerApp.swift; sourceTree = "<group>"; };
 		2B2C861F2C84C733000A05D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B2C86212C84C736000A05D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2C86242C84C736000A05D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B2DC1A42C84C921004B28DA /* HeartTacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTacker.swift; sourceTree = "<group>"; };
+		2B2DC1AA2C84D5B6004B28DA /* HeartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTrackerApp.swift; sourceTree = "<group>"; };
+		2B2DC1AE2C84D5B6004B28DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B2DC1B02C84D5B7004B28DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2DC1B32C84D5B7004B28DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B2DC1B92C84D5B7004B28DA /* HeartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2DC1BE2C84D5B7004B28DA /* HeartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTrackerApp.swift; sourceTree = "<group>"; };
+		2B2DC1C02C84D5B7004B28DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2B2DC1C22C84D5B8004B28DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B2DC1C52C84D5B8004B28DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B2DC1CF2C84D7EB004B28DA /* HeartTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartTracker.entitlements; sourceTree = "<group>"; };
+		2B4E447F2C84D8F300FB7AD3 /* HeartTracker Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartTracker Watch App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B2C86172C84C733000A05D6 /* Frameworks */ = {
+		2B2DC1A72C84D5B6004B28DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2DC1B62C84D5B7004B28DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +85,8 @@
 			isa = PBXGroup;
 			children = (
 				2B2C861C2C84C733000A05D6 /* HeartRateTracker */,
+				2B2DC1AB2C84D5B6004B28DA /* HeartTracker */,
+				2B2DC1BD2C84D5B7004B28DA /* HeartTracker Watch App */,
 				2B2C861B2C84C733000A05D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,7 +94,8 @@
 		2B2C861B2C84C733000A05D6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B2C861A2C84C733000A05D6 /* HeartRateTracker.app */,
+				2B2DC1AA2C84D5B6004B28DA /* HeartTracker.app */,
+				2B2DC1B92C84D5B7004B28DA /* HeartTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +105,6 @@
 			children = (
 				2B2C861D2C84C733000A05D6 /* HeartRateTrackerApp.swift */,
 				2B2C861F2C84C733000A05D6 /* ContentView.swift */,
-				2B2DC1A42C84C921004B28DA /* HeartTacker.swift */,
 				2B2C86212C84C736000A05D6 /* Assets.xcassets */,
 				2B2C86232C84C736000A05D6 /* Preview Content */,
 			);
@@ -70,24 +119,84 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2B2DC1AB2C84D5B6004B28DA /* HeartTracker */ = {
+			isa = PBXGroup;
+			children = (
+				2B2DC1CF2C84D7EB004B28DA /* HeartTracker.entitlements */,
+				2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */,
+				2B2DC1AE2C84D5B6004B28DA /* ContentView.swift */,
+				2B2DC1B02C84D5B7004B28DA /* Assets.xcassets */,
+				2B2DC1B22C84D5B7004B28DA /* Preview Content */,
+			);
+			path = HeartTracker;
+			sourceTree = "<group>";
+		};
+		2B2DC1B22C84D5B7004B28DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B2DC1B32C84D5B7004B28DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2B2DC1BD2C84D5B7004B28DA /* HeartTracker Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				2B4E447F2C84D8F300FB7AD3 /* HeartTracker Watch App.entitlements */,
+				2B2DC1BE2C84D5B7004B28DA /* HeartTrackerApp.swift */,
+				2B2DC1C02C84D5B7004B28DA /* ContentView.swift */,
+				2B2DC1A42C84C921004B28DA /* HeartTacker.swift */,
+				2B2DC1C22C84D5B8004B28DA /* Assets.xcassets */,
+				2B2DC1C42C84D5B8004B28DA /* Preview Content */,
+			);
+			path = "HeartTracker Watch App";
+			sourceTree = "<group>";
+		};
+		2B2DC1C42C84D5B8004B28DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2B2DC1C52C84D5B8004B28DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B2C86192C84C733000A05D6 /* HeartRateTracker */ = {
+		2B2DC1A92C84D5B6004B28DA /* HeartTracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B2C86282C84C736000A05D6 /* Build configuration list for PBXNativeTarget "HeartRateTracker" */;
+			buildConfigurationList = 2B2DC1CB2C84D5B8004B28DA /* Build configuration list for PBXNativeTarget "HeartTracker" */;
 			buildPhases = (
-				2B2C86162C84C733000A05D6 /* Sources */,
-				2B2C86172C84C733000A05D6 /* Frameworks */,
-				2B2C86182C84C733000A05D6 /* Resources */,
+				2B2DC1A62C84D5B6004B28DA /* Sources */,
+				2B2DC1A72C84D5B6004B28DA /* Frameworks */,
+				2B2DC1A82C84D5B6004B28DA /* Resources */,
+				2B2DC1CA2C84D5B8004B28DA /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B2DC1BC2C84D5B7004B28DA /* PBXTargetDependency */,
+			);
+			name = HeartTracker;
+			productName = HeartTracker;
+			productReference = 2B2DC1AA2C84D5B6004B28DA /* HeartTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B2DC1B82C84D5B7004B28DA /* HeartTracker Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B2DC1C72C84D5B8004B28DA /* Build configuration list for PBXNativeTarget "HeartTracker Watch App" */;
+			buildPhases = (
+				2B2DC1B52C84D5B7004B28DA /* Sources */,
+				2B2DC1B62C84D5B7004B28DA /* Frameworks */,
+				2B2DC1B72C84D5B7004B28DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = HeartRateTracker;
-			productName = HeartRateTracker;
-			productReference = 2B2C861A2C84C733000A05D6 /* HeartRateTracker.app */;
+			name = "HeartTracker Watch App";
+			productName = "HeartTracker Watch App";
+			productReference = 2B2DC1B92C84D5B7004B28DA /* HeartTracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +209,10 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					2B2C86192C84C733000A05D6 = {
+					2B2DC1A92C84D5B6004B28DA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2B2DC1B82C84D5B7004B28DA = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -118,35 +230,62 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2B2C86192C84C733000A05D6 /* HeartRateTracker */,
+				2B2DC1A92C84D5B6004B28DA /* HeartTracker */,
+				2B2DC1B82C84D5B7004B28DA /* HeartTracker Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2B2C86182C84C733000A05D6 /* Resources */ = {
+		2B2DC1A82C84D5B6004B28DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2C86252C84C736000A05D6 /* Preview Assets.xcassets in Resources */,
-				2B2C86222C84C736000A05D6 /* Assets.xcassets in Resources */,
+				2B2DC1B42C84D5B7004B28DA /* Preview Assets.xcassets in Resources */,
+				2B2DC1B12C84D5B7004B28DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2DC1B72C84D5B7004B28DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2DC1C62C84D5B8004B28DA /* Preview Assets.xcassets in Resources */,
+				2B2DC1C32C84D5B8004B28DA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2B2C86162C84C733000A05D6 /* Sources */ = {
+		2B2DC1A62C84D5B6004B28DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2C86202C84C733000A05D6 /* ContentView.swift in Sources */,
-				2B2DC1A52C84C921004B28DA /* HeartTacker.swift in Sources */,
-				2B2C861E2C84C733000A05D6 /* HeartRateTrackerApp.swift in Sources */,
+				2B2DC1AF2C84D5B6004B28DA /* ContentView.swift in Sources */,
+				2B2DC1AD2C84D5B6004B28DA /* HeartTrackerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B2DC1B52C84D5B7004B28DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B2DC1C12C84D5B7004B28DA /* ContentView.swift in Sources */,
+				2B2DC1CE2C84D629004B28DA /* HeartTacker.swift in Sources */,
+				2B2DC1BF2C84D5B7004B28DA /* HeartTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B2DC1BC2C84D5B7004B28DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B2DC1B82C84D5B7004B28DA /* HeartTracker Watch App */;
+			targetProxy = 2B2DC1BB2C84D5B7004B28DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2B2C86262C84C736000A05D6 /* Debug */ = {
@@ -268,17 +407,82 @@
 			};
 			name = Release;
 		};
-		2B2C86292C84C736000A05D6 /* Debug */ = {
+		2B2DC1C82C84D5B8004B28DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HeartTracker Watch App/HeartTracker Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HeartRateTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HeartTracker Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 8HM2XMG9QM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "health share request";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "health update request";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = HeartRateTracker.HeartTracker;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HeartRateTracker.HeartTracker.watchkitapp;
+				PRODUCT_NAME = HeartTracker;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		2B2DC1C92C84D5B8004B28DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HeartTracker Watch App/HeartTracker Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartTracker Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HM2XMG9QM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "health share request";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "health update request";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = HeartRateTracker.HeartTracker;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = HeartRateTracker.HeartTracker.watchkitapp;
+				PRODUCT_NAME = HeartTracker;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		2B2DC1CC2C84D5B8004B28DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HeartTracker/HeartTracker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HeartTracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HM2XMG9QM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartTracker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -289,25 +493,29 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HeartRateTracker.HeartRateTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = HeartRateTracker.HeartTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2B2C862A2C84C736000A05D6 /* Release */ = {
+		2B2DC1CD2C84D5B8004B28DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HeartTracker/HeartTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"HeartRateTracker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"HeartTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 8HM2XMG9QM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = HeartTracker;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -318,8 +526,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = HeartRateTracker.HeartRateTracker;
+				PRODUCT_BUNDLE_IDENTIFIER = HeartRateTracker.HeartTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,11 +547,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2B2C86282C84C736000A05D6 /* Build configuration list for PBXNativeTarget "HeartRateTracker" */ = {
+		2B2DC1C72C84D5B8004B28DA /* Build configuration list for PBXNativeTarget "HeartTracker Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2B2C86292C84C736000A05D6 /* Debug */,
-				2B2C862A2C84C736000A05D6 /* Release */,
+				2B2DC1C82C84D5B8004B28DA /* Debug */,
+				2B2DC1C92C84D5B8004B28DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B2DC1CB2C84D5B8004B28DA /* Build configuration list for PBXNativeTarget "HeartTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B2DC1CC2C84D5B8004B28DA /* Debug */,
+				2B2DC1CD2C84D5B8004B28DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
