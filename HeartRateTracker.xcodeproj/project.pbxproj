@@ -11,6 +11,7 @@
 		2B2C86202C84C733000A05D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2C861F2C84C733000A05D6 /* ContentView.swift */; };
 		2B2C86222C84C736000A05D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C86212C84C736000A05D6 /* Assets.xcassets */; };
 		2B2C86252C84C736000A05D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2C86242C84C736000A05D6 /* Preview Assets.xcassets */; };
+		2B2DC1A52C84C921004B28DA /* HeartTacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1A42C84C921004B28DA /* HeartTacker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2B2C861F2C84C733000A05D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2B2C86212C84C736000A05D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2C86242C84C736000A05D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2B2DC1A42C84C921004B28DA /* HeartTacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTacker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				2B2C861D2C84C733000A05D6 /* HeartRateTrackerApp.swift */,
 				2B2C861F2C84C733000A05D6 /* ContentView.swift */,
+				2B2DC1A42C84C921004B28DA /* HeartTacker.swift */,
 				2B2C86212C84C736000A05D6 /* Assets.xcassets */,
 				2B2C86232C84C736000A05D6 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2C86202C84C733000A05D6 /* ContentView.swift in Sources */,
+				2B2DC1A52C84C921004B28DA /* HeartTacker.swift in Sources */,
 				2B2C861E2C84C733000A05D6 /* HeartRateTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
