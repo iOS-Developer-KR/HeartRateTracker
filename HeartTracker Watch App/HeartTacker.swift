@@ -43,7 +43,7 @@ class HeartTacker {
                     lastHeartRate = sample.quantity.doubleValue(for: heartRateQuantity)
                 }
                 
-                print("측정되는 심박수: \(Int(lastHeartRate))")
+                print("측정되는 심박수: \(Int(lastHeartRate)), 측정된 시간: \(sample.startDate) ~ \(sample.endDate)")
             }
         }
 
