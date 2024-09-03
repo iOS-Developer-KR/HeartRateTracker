@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @Environment(HeartTacker.self) var tracker
+    @Environment(HeartTracker.self) var tracker
     
     var body: some View {
         VStack {

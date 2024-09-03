@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct HeartRateTrackerApp: App {
-    @State private var tracker = HeartTacker()
+    @State private var tracker = HeartTracker()
     
     var body: some Scene {
         WindowGroup {

@@ -16,7 +16,7 @@
 		2B2DC1C12C84D5B7004B28DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C02C84D5B7004B28DA /* ContentView.swift */; };
 		2B2DC1C32C84D5B8004B28DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C22C84D5B8004B28DA /* Assets.xcassets */; };
 		2B2DC1C62C84D5B8004B28DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C52C84D5B8004B28DA /* Preview Assets.xcassets */; };
-		2B2DC1CE2C84D629004B28DA /* HeartTacker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1A42C84C921004B28DA /* HeartTacker.swift */; };
+		2B2DC1CE2C84D629004B28DA /* HeartTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1A42C84C921004B28DA /* HeartTracker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B2DC1A42C84C921004B28DA /* HeartTacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTacker.swift; sourceTree = "<group>"; };
+		2B2DC1A42C84C921004B28DA /* HeartTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTracker.swift; sourceTree = "<group>"; };
 		2B2DC1AA2C84D5B6004B28DA /* HeartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTrackerApp.swift; sourceTree = "<group>"; };
 		2B2DC1AE2C84D5B6004B28DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,7 +121,7 @@
 				2B4E447F2C84D8F300FB7AD3 /* HeartTracker Watch App.entitlements */,
 				2B2DC1BE2C84D5B7004B28DA /* HeartTrackerApp.swift */,
 				2B2DC1C02C84D5B7004B28DA /* ContentView.swift */,
-				2B2DC1A42C84C921004B28DA /* HeartTacker.swift */,
+				2B2DC1A42C84C921004B28DA /* HeartTracker.swift */,
 				2B2DC1C22C84D5B8004B28DA /* Assets.xcassets */,
 				2B2DC1C42C84D5B8004B28DA /* Preview Content */,
 			);
@@ -248,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2DC1C12C84D5B7004B28DA /* ContentView.swift in Sources */,
-				2B2DC1CE2C84D629004B28DA /* HeartTacker.swift in Sources */,
+				2B2DC1CE2C84D629004B28DA /* HeartTracker.swift in Sources */,
 				2B2DC1BF2C84D5B7004B28DA /* HeartTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

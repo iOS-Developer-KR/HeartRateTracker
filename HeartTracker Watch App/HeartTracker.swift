@@ -9,7 +9,7 @@ import SwiftUI
 import HealthKit
 
 @Observable
-class HeartTacker {
+class HeartTracker {
     
     let healthStore = HKHealthStore()
     let heartRateQuantity = HKUnit(from: "count/min")
