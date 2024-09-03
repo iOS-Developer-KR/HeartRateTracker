@@ -44,10 +44,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B2C861D2C84C733000A05D6 /* HeartRateTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTrackerApp.swift; sourceTree = "<group>"; };
-		2B2C861F2C84C733000A05D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2B2C86212C84C736000A05D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2B2C86242C84C736000A05D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B2DC1A42C84C921004B28DA /* HeartTacker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTacker.swift; sourceTree = "<group>"; };
 		2B2DC1AA2C84D5B6004B28DA /* HeartTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartTrackerApp.swift; sourceTree = "<group>"; };
@@ -84,7 +80,6 @@
 		2B2C86112C84C733000A05D6 = {
 			isa = PBXGroup;
 			children = (
-				2B2C861C2C84C733000A05D6 /* HeartRateTracker */,
 				2B2DC1AB2C84D5B6004B28DA /* HeartTracker */,
 				2B2DC1BD2C84D5B7004B28DA /* HeartTracker Watch App */,
 				2B2C861B2C84C733000A05D6 /* Products */,
@@ -98,25 +93,6 @@
 				2B2DC1B92C84D5B7004B28DA /* HeartTracker.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2B2C861C2C84C733000A05D6 /* HeartRateTracker */ = {
-			isa = PBXGroup;
-			children = (
-				2B2C861D2C84C733000A05D6 /* HeartRateTrackerApp.swift */,
-				2B2C861F2C84C733000A05D6 /* ContentView.swift */,
-				2B2C86212C84C736000A05D6 /* Assets.xcassets */,
-				2B2C86232C84C736000A05D6 /* Preview Content */,
-			);
-			path = HeartRateTracker;
-			sourceTree = "<group>";
-		};
-		2B2C86232C84C736000A05D6 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2B2C86242C84C736000A05D6 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		2B2DC1AB2C84D5B6004B28DA /* HeartTracker */ = {
