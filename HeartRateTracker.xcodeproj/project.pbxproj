@@ -17,6 +17,7 @@
 		2B2DC1C32C84D5B8004B28DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C22C84D5B8004B28DA /* Assets.xcassets */; };
 		2B2DC1C62C84D5B8004B28DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2DC1C52C84D5B8004B28DA /* Preview Assets.xcassets */; };
 		2B2DC1CE2C84D629004B28DA /* HeartTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2DC1A42C84C921004B28DA /* HeartTracker.swift */; };
+		2BF3402A2C87639E006F58CD /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BF340292C87639E006F58CD /* WatchConnectivity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		2B2DC1C52C84D5B8004B28DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2B2DC1CF2C84D7EB004B28DA /* HeartTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HeartTracker.entitlements; sourceTree = "<group>"; };
 		2B4E447F2C84D8F300FB7AD3 /* HeartTracker Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartTracker Watch App.entitlements"; sourceTree = "<group>"; };
+		2BF340292C87639E006F58CD /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				2B2DC1CF2C84D7EB004B28DA /* HeartTracker.entitlements */,
 				2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */,
 				2B2DC1AE2C84D5B6004B28DA /* ContentView.swift */,
+				2BF340292C87639E006F58CD /* WatchConnectivity.swift */,
 				2B2DC1B02C84D5B7004B28DA /* Assets.xcassets */,
 				2B2DC1B22C84D5B7004B28DA /* Preview Content */,
 			);
@@ -238,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BF3402A2C87639E006F58CD /* WatchConnectivity.swift in Sources */,
 				2B2DC1AF2C84D5B6004B28DA /* ContentView.swift in Sources */,
 				2B2DC1AD2C84D5B6004B28DA /* HeartTrackerApp.swift in Sources */,
 			);
