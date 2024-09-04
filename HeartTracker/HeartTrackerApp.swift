@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct HeartTrackerApp: App {
+    
+    @State private var watchConnectivity = WatchConnectivity()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(watchConnectivity)
         }
     }
 }

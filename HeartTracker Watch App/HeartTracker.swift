@@ -9,10 +9,11 @@ import SwiftUI
 import HealthKit
 
 @Observable
-class HeartTracker {
+class HeartTracker: iOSConnectivity {
     
-    let healthStore = HKHealthStore()
-    let heartRateQuantity = HKUnit(from: "count/min")
+    private let healthStore = HKHealthStore()
+    private let heartRateQuantity = HKUnit(from: "count/min")
+    var heartRate = 0
     
     func autorizeHealthKit() {
         let healthKitTypes: Set = [HKQuantityType(.heartRate)]
@@ -37,10 +38,12 @@ class HeartTracker {
     }
     
     private func process(_ samples: [HKQuantitySample], type: HKQuantityTypeIdentifier) {
-            var lastHeartRate = 0.0
+            var lastHeartRate = 0
             for sample in samples {
                 if type == .heartRate {
-                    lastHeartRate = sample.quantity.doubleValue(for: heartRateQuantity)
+                    lastHeartRate = Int(sample.quantity.doubleValue(for: heartRateQuantity))
+                    sendHeartRate(heartRate: lastHeartRate, date: sample.endDate)
+                    heartRate = lastHeartRate
                 }
                 
                 print("측정되는 심박수: \(Int(lastHeartRate)), 측정된 시간: \(sample.startDate) ~ \(sample.endDate)")
