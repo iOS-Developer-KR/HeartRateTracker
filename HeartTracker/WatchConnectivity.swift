@@ -3,12 +3,13 @@ import SwiftUI
 
 @Observable
 class WatchConnectivity: NSObject {
-
+    
     let session = WCSession.default
     var heartRates: [HeartRate] = []
     private var currentRate: HeartRate?
     private var timer: Timer? = nil
-
+    var connected: Bool = false
+    
     override init() {
         super.init()
         if WCSession.isSupported() {
@@ -17,20 +18,20 @@ class WatchConnectivity: NSObject {
             startUpdating()
         }
     }
-
+    
     // 애플워치와 패어링이 되었는지 여부
     func checkIsPaired() -> Bool {
         return session.isPaired
     }
-
+    
     // 애플워치에 앱이 설치 되었는지 여부
     func isWatchAppInstalled() -> Bool {
         return session.isWatchAppInstalled
     }
-
+    
     func startUpdating() {
         timer?.invalidate()
-
+        
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [weak self] _ in
             guard let self = self else { return }
             
@@ -41,9 +42,7 @@ class WatchConnectivity: NSObject {
                     if currentRate.hr != self.heartRates.last?.hr {
                         self.heartRates.append(HeartRate(hr: currentRate.hr, date: Date()))
                     } else {
-                        DispatchQueue.main.async {
-                            self.heartRates.append(HeartRate(hr: 0, date: Date()))
-                        }
+                        self.heartRates.append(HeartRate(hr: 0, date: Date()))
                     }
                     self.currentRate = self.heartRates.last
                 } else {
@@ -52,15 +51,18 @@ class WatchConnectivity: NSObject {
             }
         }
     }
-
+    
     func maintainHR() {
-        DispatchQueue.main.async {
-            while self.heartRates.count > 300 {
-                self.heartRates.removeFirst()
-            }
+        while self.heartRates.count > 300 {
+            self.heartRates.removeFirst()
         }
     }
-
+    
+    private func updateConnectionStatus() {
+        // 연결 상태를 업데이트
+        connected = session.activationState == .activated && session.isReachable
+    }
+    
 }
 
 extension WatchConnectivity: WCSessionDelegate {
@@ -76,19 +78,30 @@ extension WatchConnectivity: WCSessionDelegate {
             print("Unexpected state received after trying to activate the WCSession")
         }
     }
-
+    
+    func sessionWatchStateDidChange(_ session: WCSession) {
+        updateConnectionStatus()
+    }
+    
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        updateConnectionStatus()
+    }
+    
     func sessionDidBecomeInactive(_ session: WCSession) {
         print("session Did Become Inactivated")
+        connected = false
     }
-
+    
     func sessionDidDeactivate(_ session: WCSession) {
         print("session Did Become Deactivated")
+        connected = false
+        
     }
-
+    
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         print(message)
     }
-
+    
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         let hr = applicationContext["HR"] as! Int
         let date = applicationContext["date"] as! Date

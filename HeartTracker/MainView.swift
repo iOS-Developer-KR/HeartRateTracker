@@ -30,45 +30,52 @@ struct MainView: View {
     @State private var shadowValue = 0.6
     
     var body: some View {
-        Text("Heart Rate Monitor")
-            .font(.headline)
-            .foregroundColor(.white)
-            .padding(.bottom, 10)
-        
-        HStack {
-            // Waveform View
-            WaveformView(heartRates: watchConnectivity.heartRates.map { $0.hr })
-                .stroke(
-                    LinearGradient(
-                        gradient: Gradient(colors: [.green, .blue]),
-                        startPoint: .leading,
-                        endPoint: .trailing),
-                    lineWidth: 3
-                )
-                .frame(maxWidth: .infinity, maxHeight: 250, alignment: .leading)
-                .background(Color.black)
-                .cornerRadius(15)
-                .shadow(color: .green.opacity(shadowValue), radius: 10, x: 0, y: 10)
-                .padding(.leading, 40)
-                .overlay(alignment: .leading) {
-                    VStack {
-                        ForEach(yAxisLabels().reversed(), id: \.self) { label in
-                            Spacer()
-                            Text(label)
-                                .font(.caption)
-                                .foregroundColor(.white)
-                                .padding(.leading, 10)
-                                .padding(.bottom, 5)
+        NavigationStack {
+            Text("Heart Rate Monitor")
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding(.bottom, 10)
+            
+            HStack {
+                // Waveform View
+                WaveformView(heartRates: watchConnectivity.heartRates.map { $0.hr })
+                    .stroke(
+                        LinearGradient(
+                            gradient: Gradient(colors: [.green, .blue]),
+                            startPoint: .leading,
+                            endPoint: .trailing),
+                        lineWidth: 3
+                    )
+                    .frame(maxWidth: .infinity, maxHeight: 250, alignment: .leading)
+                    .background(Color.black)
+                    .cornerRadius(15)
+                    .shadow(color: .green.opacity(shadowValue), radius: 10, x: 0, y: 10)
+                    .padding(.leading, 40)
+                    .overlay(alignment: .leading) {
+                        VStack {
+                            ForEach(yAxisLabels().reversed(), id: \.self) { label in
+                                Spacer()
+                                Text(label)
+                                    .font(.caption)
+                                    .foregroundColor(.white)
+                                    .padding(.leading, 10)
+                                    .padding(.bottom, 5)
+                            }
                         }
                     }
+            }
+            .padding()
+            .background(Color.black.edgesIgnoringSafeArea(.all))
+            .onAppear {
+                DispatchQueue.main.async {
+                    withAnimation(.easeInOut(duration: 3).repeatForever()) {
+                        shadowValue = 0.2
+                    }
                 }
-        }
-        .padding()
-        .background(Color.black.edgesIgnoringSafeArea(.all))
-        .onAppear {
-            DispatchQueue.main.async {
-                withAnimation(.easeInOut(duration: 3).repeatForever()) {
-                    shadowValue = 0.2
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Image(systemName: watchConnectivity.connected ? "checkmark.applewatch" : "applewatch.slash")
                 }
             }
         }

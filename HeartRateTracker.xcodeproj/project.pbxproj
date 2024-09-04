@@ -20,7 +20,6 @@
 		2BA1180C2C88407E0095836F /* WatchConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1180B2C88407E0095836F /* WatchConnectivity.swift */; };
 		2BA1180E2C8844E80095836F /* iOSConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1180D2C8844E80095836F /* iOSConnectivity.swift */; };
 		2BA118102C884EEF0095836F /* HeartRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1180F2C884EEF0095836F /* HeartRate.swift */; };
-		2BA118122C8854DA0095836F /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA118112C8854DA0095836F /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		2BA1180B2C88407E0095836F /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
 		2BA1180D2C8844E80095836F /* iOSConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSConnectivity.swift; sourceTree = "<group>"; };
 		2BA1180F2C884EEF0095836F /* HeartRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRate.swift; sourceTree = "<group>"; };
-		2BA118112C8854DA0095836F /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 				2B2DC1CF2C84D7EB004B28DA /* HeartTracker.entitlements */,
 				2B2DC1AC2C84D5B6004B28DA /* HeartTrackerApp.swift */,
 				2B2DC1AE2C84D5B6004B28DA /* MainView.swift */,
-				2BA118112C8854DA0095836F /* TestView.swift */,
 				2BA1180B2C88407E0095836F /* WatchConnectivity.swift */,
 				2BA1180F2C884EEF0095836F /* HeartRate.swift */,
 				2B2DC1B02C84D5B7004B28DA /* Assets.xcassets */,
@@ -251,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BA1180C2C88407E0095836F /* WatchConnectivity.swift in Sources */,
-				2BA118122C8854DA0095836F /* TestView.swift in Sources */,
 				2B2DC1AF2C84D5B6004B28DA /* MainView.swift in Sources */,
 				2BA118102C884EEF0095836F /* HeartRate.swift in Sources */,
 				2B2DC1AD2C84D5B6004B28DA /* HeartTrackerApp.swift in Sources */,
