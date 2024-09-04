@@ -38,26 +38,13 @@ class WatchConnectivity: NSObject {
             withAnimation(.linear) {
                 self.maintainHR()
                 
-                // Debugging: Confirm that the timer block is being executed
-                print("Timer fired")
-                
-                // Check if currentRate is set
                 if let currentRate = self.currentRate {
-                    print("Current Rate: \(currentRate.hr)")
-                    // Check if the last heart rate is different
                     if currentRate.hr != self.heartRates.last?.hr {
-                        print("새로운 심박수 추가: \(currentRate.hr)")
-//                        DispatchQueue.main.async {
-                            self.heartRates.append(HeartRate(hr: currentRate.hr, date: Date()))
-//                            self.heartRates.append(HeartRate(hr: currentRate.hr, date: Date()))
-//                            self.heartRates.append(HeartRate(hr: currentRate.hr, date: Date()))
-                            
-//                        }
+                        self.heartRates.append(HeartRate(hr: currentRate.hr, date: Date()))
                     } else {
-                        print("동일한 심박수. 0을 추가합니다.")
-//                        DispatchQueue.main.async {
+                        DispatchQueue.main.async {
                             self.heartRates.append(HeartRate(hr: 0, date: Date()))
-//                        }
+                        }
                     }
                     self.currentRate = self.heartRates.last
                 } else {
@@ -68,10 +55,9 @@ class WatchConnectivity: NSObject {
     }
 
     func maintainHR() {
-        // Ensure this function is not called excessively; consider using DispatchQueue.main.async
         DispatchQueue.main.async {
             while self.heartRates.count > 300 {
-                self.heartRates.removeFirst() // Maintain list length
+                self.heartRates.removeFirst()
             }
         }
     }
