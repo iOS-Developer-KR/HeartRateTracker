@@ -4,10 +4,9 @@ import SwiftUI
 @Observable
 class WatchConnectivity: NSObject {
 
-    var isActivated: Bool = false
     let session = WCSession.default
     var heartRates: [HeartRate] = []
-    var currentRate: HeartRate?
+    private var currentRate: HeartRate?
     private var timer: Timer? = nil
 
     override init() {
@@ -91,7 +90,6 @@ extension WatchConnectivity: WCSessionDelegate {
     }
 
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print(applicationContext)
         let hr = applicationContext["HR"] as! Int
         let date = applicationContext["date"] as! Date
         maintainHR()
