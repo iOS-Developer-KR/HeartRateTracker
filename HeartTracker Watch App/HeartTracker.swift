@@ -13,6 +13,7 @@ class HeartTracker: iOSConnectivity {
     
     private let healthStore = HKHealthStore()
     private let heartRateQuantity = HKUnit(from: "count/min")
+    let fristDate = Date()
     var heartRate = 0
     
     func autorizeHealthKit() {
@@ -39,7 +40,7 @@ class HeartTracker: iOSConnectivity {
     
     private func process(_ samples: [HKQuantitySample], type: HKQuantityTypeIdentifier) {
             var lastHeartRate = 0
-            for sample in samples {
+        for sample in samples.filter({ $0.endDate > fristDate }) {
                 if type == .heartRate {
                     lastHeartRate = Int(sample.quantity.doubleValue(for: heartRateQuantity))
                     sendHeartRate(heartRate: lastHeartRate, date: sample.endDate)

@@ -14,7 +14,7 @@ struct HeartTrackerApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
                 .environment(watchConnectivity)
         }
     }

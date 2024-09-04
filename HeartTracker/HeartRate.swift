@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HeartRate: Identifiable {
+struct HeartRate: Identifiable, Equatable {
     let id = UUID()
     var hr: Int
     var date: Date
